@@ -140,7 +140,7 @@
 			for(i=0;i<itemsArray.length;i++){
 				if(itemsArray[i].split(",")[0] == userEmail){
 					if(itemsArray[i].split(",")[1] == userPsw){
-						profileSet(userEmail,userPsw);
+						profileLoginSet(userEmail,userPsw);
 						window.location.href = "main_logged_in.html";
 						break;
 					}else{

@@ -29,8 +29,9 @@ class userProfile{
 	}
 }
 
-function profileSet(email,psw){
+function profileLoginSet(email,psw){
 	currentProfile = new userProfile(email,psw);
 	currentProfile.setActive();
+	sessionStorage.setItem('current',JSON.stringify(currentProfile));
 	// alert("Profile set!");
 }

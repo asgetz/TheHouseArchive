@@ -127,6 +127,8 @@
 	</div>
 
 	<script>
+		currentProfile = JSON.parse(sessionStorage.getItem('current'));
+
 		window.onscroll = function(){myFunction()};
 		var topnav = document.getElementById("myTopnav");
 		var sticky = topnav.offsetTop;
