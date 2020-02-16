@@ -11,4 +11,7 @@ The login field currently does nothing at the moment, but this will soon change.
 
 ## **UPDATE 2 (February 15th, 2020):**
 The Create profile page as been altered, and the login field on the main page now works. Upon loggin in with the correct information, it will send you to an almost identical main page resurved for logged in profiles. Currently the the tabs labeled "About" and "Contact" do nothing, but this will change soon.
-  next step is to start working on storing profile data within local storage. Soon enough the plan is to have the ability to store housing market data and display this data on the logged in main page.
+  Next step is to start working on storing profile data within local storage. Soon enough the plan is to have the ability to store housing market data and display this data on the logged in main page.
+
+## **UPDATE 3 (February 16th, 2020):**
+There was a small bug where upon reaching the logged in page after the login, the browser would forget the user that just logged in after switching pages. Now the bug has been fixed, and the user is remembered after the page switch with use of the browser's session storage api. The next step is still the same as the next step outlined in update 2.
