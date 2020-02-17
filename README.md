@@ -20,4 +20,4 @@ There was a small bug where upon reaching the logged in page after the login, th
 Fixing yet another small bug with the login, where it would recognize only 1 profile and no others. It has now been fixed.
 Plans for the future require 1 thing to be accomplished before moving any further.
 A web scraper must be built that allows for the data of any URL to be "scraped" and logged.
-The next few updates will be centered around building this web scraper, and once that is underway the data from real estate listings on other sites can be scraped and logged into this archive (Remember that this will act as a personal favorites list/archive of real estate house listings. The First website that will be scraped is https://www.oldhousedreams.com/
+The next few updates will be centered around building this web scraper, and once that is underway the data from real estate listings on other sites can be scraped and logged into this archive (Remember that this will act as a personal favorites list/archive of real estate house listings). The First website that will be scraped is https://www.oldhousedreams.com/
