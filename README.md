@@ -21,3 +21,6 @@ Fixing yet another small bug with the login, where it would recognize only 1 pro
 Plans for the future require 1 thing to be accomplished before moving any further.
 A web scraper must be built that allows for the data of any URL to be "scraped" and logged.
 The next few updates will be centered around building this web scraper, and once that is underway the data from real estate listings on other sites can be scraped and logged into this archive (Remember that this will act as a personal favorites list/archive of real estate house listings). The First website able to be scraped is https://www.oldhousedreams.com/
+
+## **UPDATE 5 (March 10th, 2020):**
+Have been working on the ability to scrape a website for house data; this update is to prepare for the added ability by rearranging the file/folder structure, as well as minor tweaks within the files themselves. With this setup inplace, the ability to scrape a website for house data can now be added. Note: I am using NodeJS for this, as well as using npm to install various 3rd party packages allowing the app to complete these tasks; more about what is required will be included with the update that follows.
