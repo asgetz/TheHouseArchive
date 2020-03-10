@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>The House Archive</title>
-	<script type="text/javascript" src="app.js"></script>
+	<script type="text/javascript" src="../server/app.js"></script>
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<style type="text/css">
@@ -119,13 +119,13 @@
 	</div>
 
 	<div class="topnav" id="myTopnav">
-		<a class="active" href="main_logged_out.html">Home</a>
+		<a class="active" href="./index.html">Home</a>
 		<a href="#about">About</a>
 		<a href="#contact">Contact</a>
 		<a href="create_profile.html">Create Profile</a>
 		<div class="login-container" id="loginDiv">
 			<form id="main_form">
-				<input type="text" placeholder="Email" name="email">
+				<input type="text" placeholder="Username" name="username">
 				<input type="text" placeholder="Password" name="psw">
 				<button type="button" onclick="loginFunction()">Login</button>
 			</form>
@@ -134,17 +134,17 @@
 
 	<script>
 		function loginFunction(){
-			userEmail = document.forms['main_form'].elements['email'].value;
+			username = document.forms['main_form'].elements['username'].value;
 			userPsw = document.forms['main_form'].elements['psw'].value;
 
-			for(i=0;i<itemsArray.length;i++){
-				if(itemsArray[i].split(",")[0] == userEmail){
-					if(itemsArray[i].split(",")[1] == userPsw){
-						profileLoginSet(userEmail,userPsw);
-						window.location.href = "main_logged_in.html";
+			for(i=0;i<usersArray.length;i++){
+				if(usersArray[i].split(",")[0] == username){
+					if(usersArray[i].split(",")[1] == userPsw){
+						profileLoginSet(username,userPsw);
+						window.location.href = "./main_logged_in.html";
 						break;
 					}else{
-						alert("The Email or Password you entered is incorrect!");
+						alert("The Username or Password you entered is incorrect!");
 						break;
 					}
 				}

@@ -1,17 +1,17 @@
-let itemsArray = localStorage.getItem('items') ?
+let usersArray = localStorage.getItem('items') ?
 	JSON.parse(localStorage.getItem('items')) : [];
 
 var currentProfile;
 
 class userProfile{
-	constructor(email, psw){
-		this.email = email;
+	constructor(username, psw){
+		this.username = username;
 		this.psw = psw;
 	}
 
 	setItem(){
-		itemsArray.push(this.email+","+this.psw);
-		localStorage.setItem('items',JSON.stringify(itemsArray));
+		usersArray.push(this.username+","+this.psw);
+		localStorage.setItem('items',JSON.stringify(usersArray));
 	}
 
 	setActive(){
@@ -28,8 +28,8 @@ class userProfile{
 	}
 }
 
-function profileLoginSet(email,psw){
-	currentProfile = new userProfile(email,psw);
+function profileLoginSet(username,psw){
+	currentProfile = new userProfile(username,psw);
 	currentProfile.setActive();
 	sessionStorage.setItem('current',JSON.stringify(currentProfile));
 }
