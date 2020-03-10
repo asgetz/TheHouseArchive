@@ -1,8 +1,7 @@
-var currentProfile;
-
 let itemsArray = localStorage.getItem('items') ?
 	JSON.parse(localStorage.getItem('items')) : [];
 
+var currentProfile;
 
 class userProfile{
 	constructor(email, psw){
@@ -33,5 +32,4 @@ function profileLoginSet(email,psw){
 	currentProfile = new userProfile(email,psw);
 	currentProfile.setActive();
 	sessionStorage.setItem('current',JSON.stringify(currentProfile));
-	// alert("Profile set!");
 }
